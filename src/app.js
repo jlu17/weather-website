@@ -27,14 +27,14 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
-        name: 'Blah'
+        name: 'Jen'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        name: 'meh',
+        name: 'Jen',
         help: 'YOU NEED HELP BRO'
     })
 })
@@ -42,7 +42,7 @@ app.get('/help', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'nah',
+        name: 'Jen',
         error: 'Help article not found'
     })
 })
